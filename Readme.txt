@@ -1,9 +1,5 @@
 
-The following files should accompany this readme in the same folder
 
-DSConfig_v2.1.exe
-SiUSBXp.dll
-SW22HV_6_turn_default.svo
 
 -----------------------------------------------------------------------
 
@@ -35,18 +31,49 @@ At this point, congratulations, you should have successfully installed the drive
 
 Using the Programmer.
 
-Connect the servo programmer to the usb port and start the DSConfig_v1.2.exe application. Select Reflash USB and check that v1.2 is seen in the txt box to the left of the reflash usb button. ( Note the exact version number of the appp may change of course)
+First The following files ( which should accompany this readme) should be placed in the same folder.  
 
-Next do a Read Config. This step is important since the default values that the DS Config app starts with are invalid for the SW22HV. If you write them the servo will probably (temporarily) stop moving, so always remember to do a Read Config first.
+DSConfig_v2.1.exe
+SiUSBXp.dll
+SW22HV_6_turn_default.svo
+Readme.txt
+DSConfig_v2.1.exe is the application
+SiUSBXp.dll is a dynamic link library, used to talk to the usb driver
+SW22HV_6_turn_default.svo is a winch servo configuration file which holds the default configuration for the SW22HV and can be used to recover the winch servo back to  a default working configuration.
+Readme.txt  This readme
 
-Next use the turns values table in the programmer instructions to find the correct ( non intuitive) values that will select your required number of turns into the Left range and Right range text boxes and press Write Config.  
-Note that the provided turns values are only a guide and not exact. If the turns you want are between the values written, then you can try interpolating values between those written in the manual. For simplicity, just change ( say) the Left range value by +-1 or 2 and then test if it provides the travel you want, rinse and repeat.
+---------
 
-Once happy with the range, use the Save button to save your config somewhere.
+Connect the servo programmer to the usb port and start the DSConfig_v1.2.exe application. Hit [Reflash USB] and check that v1.2 is seen in the text box to the left of the [Reflash USB] button. ( Note the exact version number of the app may change of course)
+
+Next do a [Read Config]. This step is important since the default values that the DS Config app starts with are invalid for the SW22HV. If you write them the servo will probably (temporarily) stop moving, so always remember to do a [Read Config] first.
+
+Next use the following values to find the correct ( non intuitive) values that will select your required number of turns into the Left range and Right range text boxes.
+
+Turns 		Left Range[ 	Right Range
+1 		-55 		-54
+1.5 		-51 	        -49
+2 		-46 		-45
+2.5 		-42 		-41
+3 		-39 		-37
+3.5 		-34 		-33
+4 		-30 		-30
+4.5 		-26 		-25
+5 		-22 		-22
+5.5 		-19 		-18
+6 		-14 		-14
+6.5 		-11 		-10
+
+
+Once happy press [Write Config]. You should hear a beep from the programmer. Your winch servo should now be updated to the new turns value.
+
+Note that the provided turns values are only a guide and not exact. If the turns you want are between the values written, then you can try interpolating values between those written in the manual. For simplicity, just change (say) the Left range value by +-1 or 2 and then test if it provides the travel you want, rinse and repeat.
+
+Once happy with the range, use the [Save] button to save your config somewhere on your PC.
  
-You can use the invert tick box if you want to change the direction the servo travels on a particular tx stick direction which is nice!.  Using the invert button appears also to change the range somewhat as well unfortunately.
+You can use the Invert tick box if you want to change the direction the servo travels on a particular tx stick direction.  Using the invert button appears also to change the range somewhat as well unfortunately.
 
-If for some reason your servo stops working, then use the Load button and load the SW22HV_6_turn_default.svo file and press Write Config and your winch servo should now start working again.
+If for some reason your servo stops working, then use the [Load] button and load the SW22HV_6_turn_default.svo file and press [Write Config] and your winch servo should now start working again.
 
 
 
