@@ -46,7 +46,7 @@ Readme.txt  This readme
 
 Connect the servo programmer to the usb port and start the DSConfig_v1.2.exe application. Hit [Reflash USB] and check that v1.2 is seen in the text box to the left of the [Reflash USB] button. ( Note the exact version number of the app may change of course)
 
-Next do a [Read Config]. This step is important since the default values that the DS Config app starts with are invalid for the SW22HV. If you write them the servo will probably (temporarily) stop moving, so always remember to do a [Read Config] first.
+Next connect the winch servo to the programmer, taking especial care to get the connector the correct way around with black to the pin marked GND, and do a [Read Config]. This step is important since the default values that the DS Config app starts with are invalid for the SW22HV. If you write them the servo will probably (temporarily) stop moving, so always remember to do a [Read Config] first.
 
 Next use the following values to find the correct ( non intuitive) values that will select your required number of turns into the Left range and Right range text boxes.
 
