@@ -1,0 +1,5 @@
+
+Rando motes.
+SW22-HV is certainly not waterproof and will not tolerate immersion in water. There is no o-ring at the output horn end or on the screws on bottom of case. No gaskets on the case either. Would have to be worked on to ateepmt waterproofing.
+
+The SW22-HV pot gear appears to be replaceable by one of gears in sg90, though sg90 has slightly bigger shaft. Anyway it may be viable in the event it is stripped.

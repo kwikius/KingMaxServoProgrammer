@@ -1,0 +1,22 @@
+SW22HV h bridge drivers
+
+N channel
+FDS9926A
+Dual N-Channel 2.5V Specified PowerTrench MOSFET
+
+P channel
+FDS4935BZ
+Dual 30 Volt P-Channel PowerTrench MOSFET
+
+servo controller
+
+KC9806  http://www.kcsemitech.com/
+
+More info on info on KC9806 servo ic from http://www.kcsemitech.com
+
+https://www.rcgroups.com/forums/showthread.php?2840779-F3P-Team-Finland-tips-and-tricks
+https://www.rcgroups.com/forums/showthread.php?2210274-Servo-program-card-from-EMAX
+
+
+
+
